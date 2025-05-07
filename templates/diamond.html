@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diamond Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/diamonds.css') }}">
+  <script defer src="{{ url_for('static', filename='js/diamonds.js') }}"></script>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="main-header">💠 Diamond Price Predictor</h1>
+      <p class="intro-text">Predict the value of your diamond based on key quality metrics like carat, cut, color, and clarity. Make informed decisions with confidence.</p>
+
+      <h2 class="form-title">💎 Diamond Classifier</h2>
+
+      <form method="POST" action="/predict">
+        <label for="carat">Carat Weight:</label>
+        <input type="number" id="carat" name="carat" step="0.01" min="0.01" placeholder="e.g., 0.75" required>
+
+        <label for="cut">Cut Quality:</label>
+        <select id="cut" name="cut" required>
+          <option value="">Select cut</option>
+          <option value="1">Fair</option>
+          <option value="2">Good</option>
+          <option value="3">Very Good</option>
+          <option value="4">Premium</option>
+          <option value="5">Ideal</option>
+        </select>
+
+        <label for="color">Color Grade:</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select color grade</option>
+          <optgroup label="Colorless">
+            <option value="5">DEF</option>
+          </optgroup>
+          <optgroup label="Near Colorless">
+            <option value="4">GHIJ</option>
+          </optgroup>
+          <optgroup label="Faint Yellow">
+            <option value="3">KLM</option>
+          </optgroup>
+          <optgroup label="Very Light Yellow">
+            <option value="2">NOPQR</option>
+          </optgroup>
+          <optgroup label="Light Yellow">
+            <option value="1">STUVWXYZ</option>
+          </optgroup>
+        </select>
+
+        <label for="clarity">Clarity:</label>
+        <select id="clarity" name="clarity" required>
+          <option value="" disabled selected>Select clarity</option>
+          <option value="1">I1</option>
+          <option value="2">SI2</option>
+          <option value="3">SI1</option>
+          <option value="4">VS1</option>
+          <option value="5">VS2</option>
+          <option value="6">VVS2</option>
+          <option value="7">VVS1</option>
+          <option value="8">IF (Internally Flawless)</option>
+        </select>
+
+        <button type="submit">🔍 Predict Value</button>
+        <div class="loader" id="loader"></div>
+      </form>
+
+      <div id="result">{{pred}}</div>
+    </div>
+  </div>
+</body>
+</html>
