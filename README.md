@@ -21,11 +21,7 @@ A simple yet powerful web application that predicts the **price of a diamond** b
 
 - Clone the repo
 - Ensure `diamond_model.pkl` is in the root directory
-- Run:
-
-```bash
-python app.py
-
+- Run app.py
 
 
 #🖼️ Preview
