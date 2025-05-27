@@ -28,11 +28,16 @@ python app.py
 
 
 
-🖼️ Preview
-Hover over the link below to see a preview of the app:
+## 🖼️ Preview
 
-<a href="#"> <img src="static/price%20predictor.JPG" alt="Diamond Price Predictor Preview" width="400" title="Diamond Price Predictor Web Interface"> </a>
-📸 Screenshot is located at static/price predictor.JPG
+Hover to see a preview of the app:
+
+<a href="#">
+  <img src="static/price_predictor.jpg" alt="Diamond Price Predictor Preview" width="400" title="Diamond Price Predictor Web Interface">
+</a>
+
+📸 Screenshot is located at `static/price_predictor.jpg`
+
 
 
 🧠 Model
