@@ -32,9 +32,9 @@ python app.py
 
 🖼️ Preview of the app:
 
-<img src="static/price_predictor.jpg" alt="Diamond Price Predictor Preview" width="400">
+<img src="static/images/price_predictor.jpg" alt="Diamond Price Predictor Preview" width="400">
 
-📸 Screenshot is located at `static/price_predictor.jpg`
+📸 Screenshot
 
 
 🧠 Model
