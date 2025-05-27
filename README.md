@@ -30,11 +30,12 @@ python app.py
 
 #🖼️ Preview
 
-🖼️ Preview of the app:
+Preview of the app:
 
-<img src="static/images/price_predictor.jpg" alt="Diamond Price Predictor Preview" width="400">
+https://github.com/acetosyn/diamond-Price-Predictor/blob/main/static/images/price_predictor.jpg
 
-📸 Screenshot
+📸 Screenshot is located at `static/images/price_predictor.jpg`
+
 
 
 🧠 Model
